@@ -26,16 +26,3 @@ void	*ft_memset(void *s, int c, size_t n)
 	}
 	return (s);
 }
-
-int main()
-{
-	int i = 0;
-	
-	// 0000 0000 0000 0000 0000 0101 0011 1001
-	ft_memset((char*)&i, 57, 1);
-	ft_memset((char *)&i+1, 5, 1);
-	ft_memset((char *)&i+2, 0, 1);
-	ft_memset((char *)&i+3, 0, 1);
-
-	printf("%d\n", i);
-}
